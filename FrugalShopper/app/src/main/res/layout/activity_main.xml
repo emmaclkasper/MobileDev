@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/itemA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="54dp"
+        android:text="@string/A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/itemB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemA" />
+
+    <TextView
+        android:id="@+id/itemC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemB" />
+
+    <EditText
+        android:id="@+id/poundA"
+        android:layout_width="38dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="LB(s)"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/itemA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ounceA"
+        android:layout_width="38dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="OZ(s)"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/poundA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/poundB"
+        android:layout_width="38dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="LB(s)"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/itemB"
+        app:layout_constraintTop_toBottomOf="@+id/poundA" />
+
+
+    <EditText
+        android:id="@+id/ounceB"
+        android:layout_width="38dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="OZ(s)"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/poundB"
+        app:layout_constraintTop_toBottomOf="@+id/ounceA" />
+
+    <EditText
+        android:id="@+id/poundC"
+        android:layout_width="38dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="LB(s)"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/itemC"
+        app:layout_constraintTop_toBottomOf="@+id/poundB" />
+
+    <EditText
+        android:id="@+id/ounceC"
+        android:layout_width="38dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="OZ(s)"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/poundC"
+        app:layout_constraintTop_toBottomOf="@+id/ounceB" />
+
+    <EditText
+        android:id="@+id/priceB"
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/PRICE"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/ounceB"
+        app:layout_constraintTop_toBottomOf="@+id/priceA" />
+
+    <EditText
+        android:id="@+id/priceA"
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/PRICE"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/ounceA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/priceC"
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/PRICE"
+        android:inputType="numberDecimal"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/ounceC"
+        app:layout_constraintTop_toBottomOf="@+id/priceB" />
+
+    <Button
+        android:id="@+id/compare"
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:gravity="center"
+        android:text="@string/COMPARE"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ounceC" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="247dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:gravity="center"
+        android:text="@string/RESULT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compare" />
+
+    <TextView
+        android:id="@+id/unitA"
+        android:layout_width="75dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="37dp"
+        android:gravity="center"
+        android:text="Unit Price A"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/priceA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/unitB"
+        android:layout_width="75dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Unit Price B"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/priceB"
+        app:layout_constraintTop_toBottomOf="@+id/unitA" />
+
+    <TextView
+        android:id="@+id/unitC"
+        android:layout_width="75dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Unit Price C"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/priceC"
+        app:layout_constraintTop_toBottomOf="@+id/unitB" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Frugal Shopper</string>
+    <string name="RESULT">BEST BARGAIN</string>
+    <string name="COMPARE">COMPARE</string>
+    <string name="PRICE">PRICE</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+
+</resources>

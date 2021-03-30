@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Idea Fragments</string>
+
+
+    <string name="cuisine_overview">Cuisine Overview</string>
+    <string name="list_restaurants">List of Restaurants</string>
+    <array name="cuisine">
+        <item>American</item>
+        <item>Asian</item>
+        <item>Italian</item>
+        <item>Mexican</item>
+        <item>Vegetarian</item>
+        <item>Sweets</item>
+    </array>
+    <string name="americanName"> American </string>
+    <string name="asianName">Asian</string>
+    <string name="italianName">Italian</string>
+    <string name="mexicanName">Mexican</string>
+    <string name="vegetarianName">Vegetarian</string>
+    <string name="sweetsName">Sweets</string>
+    <string name="americanTitle">American Recommendations</string>
+    <string name="asianTitle">Asian Recommendations</string>
+    <string name="italianTitle">Italian Recommendations</string>
+    <string name="mexicanTitle">Mexican Recommendations</string>
+    <string name="vegetarianTitle">Vegetarian Recommendations</string>
+    <string name="sweetsTitle">Sweets Recommendations</string>
+
+
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:textAlignment="center"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/textViewAppTittle"
+        android:layout_width="355dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/welcome_note"
+        android:textColor="@color/colorMainPageOverview"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAppOverview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textViewAppOverview"
+        style="@style/styleTextMainPage"
+        android:layout_width="352dp"
+        android:layout_height="183dp"
+        android:textColor="@color/colorMainPageOverview"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCuisine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTittle" />
+
+    <Spinner
+        android:id="@+id/spinnerCuisine"
+        android:layout_width="308dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="250dp"
+        android:entries="@array/cuisines"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppOverview" />
+
+    <Button
+        android:id="@+id/buttonMoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="133dp"
+        android:text="More Info on Cuisine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonListRestaurants"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonListRestaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="133dp"
+        android:text="List Restaurants"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMoreInfo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+   -- <ImageView
+        android:id="@+id/mainPageImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/food_main" />
+
+
+
+</android.support.constraint.ConstraintLayout>

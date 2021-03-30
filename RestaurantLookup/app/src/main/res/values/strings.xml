@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Restaurant Lookup</string>
+    <string name="food_main">Main Image</string>
+    <string name="cuisine_overview">Cuisine Overview</string>
+    <string name="list_restaurants">List of Restaurants</string>
+    <array name="cuisines">
+        <item>Native American</item>
+        <item>Indian</item>
+        <item>Thai</item>
+        <item>Italian</item>
+        <item>Chinese</item>
+        <item>Mexican</item>
+        <item>Japanese</item>
+        <item>Armenian</item>
+    </array>
+    <string name="welcome_note">Welcome to Restaurant Lookup App for Athens, GA area.</string>
+    <string name="native_american_cuisine_title">Native American</string>
+    <string name="indian_cuisine_title">Indian</string>
+    <string name="thai_cuisine_title">Thai</string>
+    <string name="italian_cuisine_title">Italian</string>
+    <string name="chinese_cuisine_title">Chinese</string>
+    <string name="mexican_cuisine_title">Mexican</string>
+    <string name="japanese_cuisine_title">Japanese</string>
+    <string name="armenian_cuisine_title">Armenian</string>
+    <string name="native_american_res_title">Native American Restaurants List</string>
+    <string name="indian_res_title">Indian Restaurants List</string>
+    <string name="thai_res_title">Thai Restaurants List</string>
+    <string name="italian_res_title">Italian Restaurants List</string>
+    <string name="chinese_res_title">Chinese Restaurants List</string>
+    <string name="mexican_res_title">Mexican Restaurants List</string>
+    <string name="japanese_res_title">Japanese Restaurants List</string>
+    <string name="armenian_res_title">Armenian Restaurants List</string>
+</resources>
